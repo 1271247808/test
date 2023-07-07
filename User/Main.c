@@ -26,8 +26,8 @@ int main(void)
 	Usart1_Init(Screen_Baudrate);
 	Usart_Init(Vision_Baudrate);
 	Car_Init();
-	PID_Init(&mPID, 1.0, 0, 3.0, 10, 5);
-	
+	PID_Init(&mPID, 1.0, 0, 3.0, 10, 10);
+	CountSensor_Init();
 	NVIC_Config();
 	
 	while(Flag.Run_Step == 0)
@@ -40,5 +40,13 @@ int main(void)
 	while(1)
 	{
 		CarControl();
+//		//Go_Ahead();
+//		//Delay_ms(500);
+//		Turn_Left();
+//		//Turn_Left2();
+//		Turn_Right();
+//		//After left
+//		//Go_Back();
+//		Delay_ms(500);
 	}
 }

@@ -6,11 +6,14 @@
 #include "Control.h"
 #include "PID.h"
 #include "OLED.h"
+#include "CountSensor.h"
+#include "Car.h"
 
 //Param_InitTypedef Param;
 
 short PID_actual_angle = 0;
 int Corner_Flag = 0;
+
 
 u8 RxCounter1 = 0;
 u8 RxBuffer1[10] = {0};
@@ -180,6 +183,10 @@ void USART3_IRQHandler(void)
 					{
 						PID_Ahead(&mPID);
 					}
+//					else if(Sensor_Count >= 22)
+//					{
+//						Go_Ahead();
+//					}
 				}
 				RxFlag1 = 0;
 				RxCounter1 = 0;

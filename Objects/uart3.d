@@ -35,3 +35,5 @@
 .\objects\uart3.o: Hardware\Control.h
 .\objects\uart3.o: Hardware\PID.h
 .\objects\uart3.o: Hardware\OLED.h
+.\objects\uart3.o: Hardware\CountSensor.h
+.\objects\uart3.o: Hardware\Car.h

@@ -29,6 +29,7 @@
 .\objects\control.o: .\Library\stm32f10x_wwdg.h
 .\objects\control.o: .\Library\misc.h
 .\objects\control.o: Hardware\Control.h
+.\objects\control.o: .\System\Delay.h
 .\objects\control.o: Hardware\Uart3.h
 .\objects\control.o: Hardware\PID.h
 .\objects\control.o: Hardware\CountSensor.h

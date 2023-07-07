@@ -4,6 +4,8 @@
 #include "Delay.h"
 #include "Control.h"
 
+int16_t Speed = 15;
+
 void Car_Init(){
 	Motor_Init_Right();
 	Motor_Init_Left();
@@ -47,11 +49,12 @@ void Car_Stop(){
 
 void Turn_Left(void){
 	Self_Left();
-	Delay_ms(495);
+	Delay_ms(700);
 	Car_Stop();	
+	Delay_ms(100);
 }
 
-void Turn_Left2(void)
+void Turn_Right2(void)
 {	
 	Motor_SetLeftSpeed(-Speed);
 	Motor_SetRightSpeed(0);
@@ -59,24 +62,26 @@ void Turn_Left2(void)
 	Car_Stop();
 }
 
-void Turn_Right2(void)
+void Turn_Left2(void)
 {
 	Motor_SetLeftSpeed(0);
 	Motor_SetRightSpeed(Speed);
-	Delay_ms(890);
+	Delay_ms(1000);
 	Car_Stop();
 }
 
 void Turn_Right(void){
 		Self_Right();
-		Delay_ms(495);
-		Car_Stop();		
+		Delay_ms(700);
+		Car_Stop();	
+		Delay_ms(100);
 }
 
 void Turn_Around(void){
 		Self_Right();
-		Delay_ms(890);
-		Car_Stop();	
+		Delay_ms(1600);
+		Car_Stop();
+		Delay_ms(100);
 }
 
 void Trace_Ahead(int8_t Speed, int8_t Turn)
