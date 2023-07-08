@@ -1,7 +1,7 @@
 .\objects\pid.o: Hardware\PID.c
 .\objects\pid.o: .\Start\stm32f10x.h
 .\objects\pid.o: .\Start\core_cm3.h
-.\objects\pid.o: F:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\pid.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\pid.o: .\Start\system_stm32f10x.h
 .\objects\pid.o: .\User\stm32f10x_conf.h
 .\objects\pid.o: .\Library\stm32f10x_adc.h

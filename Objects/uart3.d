@@ -1,7 +1,7 @@
 .\objects\uart3.o: Hardware\Uart3.c
 .\objects\uart3.o: .\Start\stm32f10x.h
 .\objects\uart3.o: .\Start\core_cm3.h
-.\objects\uart3.o: F:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart3.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\uart3.o: .\Start\system_stm32f10x.h
 .\objects\uart3.o: .\User\stm32f10x_conf.h
 .\objects\uart3.o: .\Library\stm32f10x_adc.h
@@ -28,9 +28,9 @@
 .\objects\uart3.o: .\Library\stm32f10x_usart.h
 .\objects\uart3.o: .\Library\stm32f10x_wwdg.h
 .\objects\uart3.o: .\Library\misc.h
-.\objects\uart3.o: F:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
-.\objects\uart3.o: F:\Keil5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\uart3.o: F:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\uart3.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\uart3.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\uart3.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\uart3.o: Hardware\Uart3.h
 .\objects\uart3.o: Hardware\Control.h
 .\objects\uart3.o: Hardware\PID.h

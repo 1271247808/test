@@ -1,7 +1,7 @@
 .\objects\uart1.o: Hardware\Uart1.c
 .\objects\uart1.o: .\Start\stm32f10x.h
 .\objects\uart1.o: .\Start\core_cm3.h
-.\objects\uart1.o: F:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\uart1.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\uart1.o: .\Start\system_stm32f10x.h
 .\objects\uart1.o: .\User\stm32f10x_conf.h
 .\objects\uart1.o: .\Library\stm32f10x_adc.h
@@ -28,9 +28,9 @@
 .\objects\uart1.o: .\Library\stm32f10x_usart.h
 .\objects\uart1.o: .\Library\stm32f10x_wwdg.h
 .\objects\uart1.o: .\Library\misc.h
-.\objects\uart1.o: F:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\uart1.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\uart1.o: .\System\Delay.h
-.\objects\uart1.o: F:\Keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\uart1.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\uart1.o: Hardware\Uart1.h
 .\objects\uart1.o: Hardware\Control.h
 .\objects\uart1.o: Hardware\Uart3.h
