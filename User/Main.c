@@ -1,10 +1,10 @@
-//Success at tracing ong the straight line and stop at the corner
+//Success at tracing and return
 
 #include "stm32f10x.h"
 #include "stdio.h"
 #include "Delay.h"
 #include "OLED.h"
-#include "LED.h"
+//#include "LED.h"
 #include "Uart1.h"
 #include "Uart3.h"
 #include "NVIC.h"
@@ -26,7 +26,7 @@ int main(void)
 	Usart1_Init(Screen_Baudrate);
 	Usart_Init(Vision_Baudrate);
 	Car_Init();
-	PID_Init(&mPID, 1.0, 0, 3.0, 10, 10);
+	PID_Init(&mPID, 4, 0, 2.8, 10, 13);
 	CountSensor_Init();
 	NVIC_Config();
 	
@@ -35,13 +35,15 @@ int main(void)
 		while(Param.ModeChoose == NotStarting);
 		Sensor_Count = 0;
 		Flag.Run_Step = Goto;
+//		Sensor_Count = 10;
+//		Flag.Run_Step = GoBack;
 	}
 	
 	while(1)
 	{
 		CarControl();
-//		//Go_Ahead();
-//		//Delay_ms(500);
+		//Go_Ahead();
+		//Delay_ms(500);
 //		Turn_Left();
 //		//Turn_Left2();
 //		Turn_Right();

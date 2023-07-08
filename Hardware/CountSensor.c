@@ -2,6 +2,7 @@
 #include "Delay.h"
 #include "Control.h"
 #include "Uart1.h"
+#include "OLED.h"
 
 int Sensor_Count;
 
@@ -54,12 +55,14 @@ void EXTI15_10_IRQHandler(void)
 				if(Flag.Run_Step == Goto)
 				{
 					Sensor_Count ++;
-					HMISendVal(Sensor_Count);
+					//HMISendVal(Sensor_Count);
+					OLED_ShowNum(4, 1, Sensor_Count, 2);
 				}
 				else if(Flag.Run_Step == GoBack) 
 				{
 					Sensor_Count --;
-					HMISendVal(Sensor_Count);
+					//HMISendVal(Sensor_Count);
+					OLED_ShowNum(4, 1, Sensor_Count, 2);
 				}
 			}
 		}

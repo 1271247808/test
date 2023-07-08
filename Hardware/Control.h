@@ -44,6 +44,8 @@ typedef struct{
 extern Param_InitTypedef Param;
 extern Flag_InitTypedef Flag;
 extern int16_t Speed;
+extern int16_t lspeed;
+extern int16_t rspeed;
 
 //extern int PID_actual_angle;
 extern int Corner_Flag;

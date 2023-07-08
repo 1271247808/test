@@ -31,3 +31,4 @@
 .\objects\countsensor.o: .\System\Delay.h
 .\objects\countsensor.o: Hardware\Control.h
 .\objects\countsensor.o: Hardware\Uart1.h
+.\objects\countsensor.o: Hardware\OLED.h

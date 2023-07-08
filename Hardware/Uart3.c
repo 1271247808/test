@@ -181,6 +181,8 @@ void USART3_IRQHandler(void)
 					//PID_actual_angle = RxBuffer1[RxCounter1 - 5];
 					if(Flag.Is_Go_straight == 1)
 					{
+						if(PID_actual_angle >= 550)	PID_actual_angle = 0;
+						else if(PID_actual_angle <= -550) PID_actual_angle = 0;
 						PID_Ahead(&mPID);
 					}
 //					else if(Sensor_Count >= 22)
@@ -246,7 +248,7 @@ void USART3_IRQHandler(void)
 				if(RxFlag1)
 				{
 					Corner_Flag = RxBuffer1[RxCounter1 - 2];
-					OLED_ShowString(4, 1, "Turn");
+					//OLED_ShowString(4, 1, "Turn");
 				}
 				RxFlag1 = 0;
 				RxCounter1 = 0;

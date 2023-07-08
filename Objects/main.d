@@ -31,7 +31,6 @@
 .\objects\main.o: F:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main.o: .\System\Delay.h
 .\objects\main.o: .\Hardware\OLED.h
-.\objects\main.o: .\Hardware\LED.h
 .\objects\main.o: .\Hardware\Uart1.h
 .\objects\main.o: .\Hardware\Uart3.h
 .\objects\main.o: .\System\NVIC.h

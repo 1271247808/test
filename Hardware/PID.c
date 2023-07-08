@@ -43,7 +43,7 @@ void PID_Calc(PID_InitTypedef *pid,float reference,float feedback)
 void PID_Ahead(PID_InitTypedef *mypid)
 {
 	float a;
-	a = PID_actual_angle;//被控对象的反馈值
+	a = PID_actual_angle / 50.0 ;//被控对象的反馈值
 	float feedbackValue=a;//这里获取到被控对象的反馈值
     float targetValue=0;//这里获取到目标值
     PID_Calc(mypid,targetValue,feedbackValue);//进行PID计算，结果在output成员变量中
