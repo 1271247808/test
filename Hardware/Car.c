@@ -35,8 +35,8 @@ void Go_Back(){
 //}
 
 void Self_Left(){
-	Motor_SetLeftSpeed(-lspeed-5);
-	Motor_SetRightSpeed(-lspeed);
+	Motor_SetLeftSpeed(-lspeed);
+	Motor_SetRightSpeed(-lspeed+5);
 }
 
 void Self_Right(){
