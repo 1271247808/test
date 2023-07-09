@@ -208,6 +208,9 @@ void CarControl(void)
 			//{
 			//Usart3_SendString("mode11");
 			//}
+			Self_Left();
+			Delay_ms(200);
+			Corner_Flag = 1;
 			while(Corner_Flag == 1)
 			{
 				Self_Left();
@@ -273,6 +276,9 @@ void CarControl(void)
 			//{
 				//Usart3_SendString("mode12");
 			//}
+			Self_Right();
+			Delay_ms(200);
+			Corner_Flag = 2;
 			while(Corner_Flag == 2)
 			{
 				Self_Right();
