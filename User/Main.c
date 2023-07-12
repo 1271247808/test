@@ -16,7 +16,7 @@
 #include "CountSensor.h"
 
 u32 Screen_Baudrate = 9600;
-u32 Vision_Baudrate = 115200;
+u32 Vision_Baudrate = 9600;
 
 //uint16_t Alarm_Key;
 
@@ -29,7 +29,7 @@ int main(void)
 	Usart1_Init(Screen_Baudrate);
 	Usart_Init(Vision_Baudrate);
 	Car_Init();
-	PID_Init(&mPID, 2, 0, 1, 10, 4);
+	PID_Init(&mPID, 2.3, 0, 1, 10, 4);
 	CountSensor_Init();
 	NVIC_Config();
 	
