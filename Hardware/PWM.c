@@ -17,7 +17,7 @@ void PWM_Init_Left(void)
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
 	TIM_TimeBaseInitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
 	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
-	TIM_TimeBaseInitStructure.TIM_Period = 400 - 1;		//ARR
+	TIM_TimeBaseInitStructure.TIM_Period = 100 - 1;		//ARR
 	TIM_TimeBaseInitStructure.TIM_Prescaler = 720 - 1;		//PSC
 	TIM_TimeBaseInitStructure.TIM_RepetitionCounter = 0;
 	TIM_TimeBaseInit(TIM2, &TIM_TimeBaseInitStructure);
@@ -54,7 +54,7 @@ void PWM_Init_Right(void)
 	TIM_TimeBaseInitTypeDef TIM_TimeBaseInitStructure;
 	TIM_TimeBaseInitStructure.TIM_ClockDivision = TIM_CKD_DIV1;
 	TIM_TimeBaseInitStructure.TIM_CounterMode = TIM_CounterMode_Up;
-	TIM_TimeBaseInitStructure.TIM_Period = 400 - 1;		//ARR
+	TIM_TimeBaseInitStructure.TIM_Period = 100 - 1;		//ARR
 	TIM_TimeBaseInitStructure.TIM_Prescaler = 720- 1;		//PSC
 	TIM_TimeBaseInitStructure.TIM_RepetitionCounter = 0;
 	TIM_TimeBaseInit(TIM3, &TIM_TimeBaseInitStructure);

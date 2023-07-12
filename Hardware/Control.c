@@ -33,7 +33,7 @@ void CarControl(void)
 				Usart3_SendString("mode0");
 				//Stop and Reverse
 				Go_Ahead();
-				Delay_ms(500);
+				Delay_ms(250);
 				OLED_ShowString(3, 1, "Spin");
 				Car_Stop();
 				//Buzz
@@ -43,7 +43,7 @@ void CarControl(void)
 				//Turn_Around();			//Reverse
 				Corner_Flag = 3;
 				Self_Left();
-				Delay_ms(600);
+				Delay_ms(300);
 				Usart3_SendString("mode2");
 				while(Corner_Flag == 3)
 				{
@@ -78,7 +78,7 @@ void CarControl(void)
 			OLED_ShowString(3, 1, "Left");
 			//Usart3_SendString("mode0");
 			Go_Ahead();
-			Delay_ms(250);
+			Delay_ms(150);
 			Car_Stop();
 			Delay_ms(500);
 			//Turn Left
@@ -115,7 +115,7 @@ void CarControl(void)
 				Flag.Is_Go_straight = 0;//Stop
 				Usart3_SendString("mode0");	
 				Go_Ahead();
-				Delay_ms(500);
+				Delay_ms(250);
 				Car_Stop();	
 				//LED off
 				Alarm_Key = 0;
@@ -142,7 +142,7 @@ void CarControl(void)
 		{
 			//Usart3_SendString("mode0");
 			Go_Ahead();
-			Delay_ms(250);
+			Delay_ms(150);
 			Car_Stop();
 			Delay_ms(500);
 			//Turn Left
@@ -155,7 +155,7 @@ void CarControl(void)
 				//Usart3_SendString("mode12");
 			//}
 			Self_Right();
-			Delay_ms(1000);
+			Delay_ms(500);
 			Corner_Flag = 2;
 			while(Corner_Flag == 2)
 			{

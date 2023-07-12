@@ -4,9 +4,9 @@
 #include "Delay.h"
 #include "Control.h"
 
-int16_t Speed = 350;
-int16_t lspeed = 40;
-int16_t rspeed = 40;
+int16_t Speed = 30;
+int16_t lspeed = 10;
+int16_t rspeed = 10;
 
 void Car_Init(){
 	Motor_Init_Right();

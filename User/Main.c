@@ -29,7 +29,7 @@ int main(void)
 	Usart1_Init(Screen_Baudrate);
 	Usart_Init(Vision_Baudrate);
 	Car_Init();
-	PID_Init(&mPID, 8, 0, 4, 10, 13);
+	PID_Init(&mPID, 2, 0, 1, 10, 4);
 	CountSensor_Init();
 	NVIC_Config();
 	
