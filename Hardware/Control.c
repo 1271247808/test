@@ -173,6 +173,7 @@ void CarControl(void)
 	//TASK2
 	else if(Param.ModeChoose == TASK2)
 	{
+		
 		if(Flag.Run_Step == Goto)
 		{
 			//Reach #10
@@ -307,6 +308,7 @@ void CarControl(void)
 		}
 	}
 	
+	//TASK3
 	else if(Param.ModeChoose == TASK3)
 	{
 		
