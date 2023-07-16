@@ -37,3 +37,4 @@
 .\objects\control.o: Hardware\OLED.h
 .\objects\control.o: Hardware\LED.h
 .\objects\control.o: .\System\Alarm.h
+.\objects\control.o: Hardware\Encoder.h

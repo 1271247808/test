@@ -8,6 +8,7 @@
 #include "OLED.h"
 #include "LED.h"
 #include "Alarm.h"
+#include "Encoder.h"
 
 Param_InitTypedef Param;
 Flag_InitTypedef Flag;
@@ -20,6 +21,8 @@ int i;
 
 void CarControl(void)
 {
+	Encoder_Init();
+	OLED_ShowSignedNum(3, 1,Encoder_Get(),5 );
 	//TASK1
 	if(Param.ModeChoose == TASK1)
 	{

@@ -40,6 +40,7 @@
 ".\objects\countsensor.o"
 ".\objects\car.o"
 ".\objects\pid.o"
+".\objects\encoder.o"
 ".\objects\stm32f10x_it.o"
 ".\objects\main.o"
 --strict --scatter ".\Objects\Project.sct"

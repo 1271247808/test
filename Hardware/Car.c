@@ -35,13 +35,13 @@ void Go_Back(){
 //}
 
 void Self_Left(){
-	Motor_SetLeftSpeed(lspeed);
-	Motor_SetRightSpeed(-lspeed);
+	Motor_SetLeftSpeed(-lspeed);
+	Motor_SetRightSpeed(lspeed);
 }
 
 void Self_Right(){
-	Motor_SetLeftSpeed(-rspeed);
-	Motor_SetRightSpeed(rspeed);
+	Motor_SetLeftSpeed(rspeed);
+	Motor_SetRightSpeed(-rspeed);
 }
 
 void Car_Stop(){
@@ -88,6 +88,6 @@ void Turn_Around(void){
 
 void Trace_Ahead(int8_t Speed, int8_t Turn)
 {
-	Motor_SetLeftSpeed(Speed-Turn);
-	Motor_SetRightSpeed(Speed+Turn);
+	Motor_SetLeftSpeed(Speed+Turn);
+	Motor_SetRightSpeed(Speed-Turn);
 }
