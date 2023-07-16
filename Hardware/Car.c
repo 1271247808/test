@@ -35,13 +35,13 @@ void Go_Back(){
 //}
 
 void Self_Left(){
-	Motor_SetLeftSpeed(-lspeed);
-	Motor_SetRightSpeed(lspeed);
+	Motor_SetLeftSpeed(lspeed);
+	Motor_SetRightSpeed(-lspeed);
 }
 
 void Self_Right(){
-	Motor_SetLeftSpeed(rspeed);
-	Motor_SetRightSpeed(-rspeed);
+	Motor_SetLeftSpeed(-rspeed);
+	Motor_SetRightSpeed(rspeed);
 }
 
 void Car_Stop(){
